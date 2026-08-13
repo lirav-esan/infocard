@@ -10,11 +10,8 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "src"
+  group: "pages"
   cancel-in-progress: true
-defaults:
-  run:
-    working-directory: infocard
 jobs:
   deploy:
     environment:
